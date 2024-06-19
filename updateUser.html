@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-nav-container">
+        <h1>Update User Information</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="addUser.html">Add Users</a>
+        </nav>
+    </div>
+
+    <div class="update-user-container">
+        <h2>Update User</h2>
+        <form id="updateUserForm">
+            <label for="ime">Ime:</label>
+            <input type="text" id="ime" name="ime" required><br><br>
+            
+            <label for="prezime">Prezime:</label>
+            <input type="text" id="prezime" name="prezime" required><br><br>
+            
+            <label for="dob">Dob:</label>
+            <input type="number" id="dob" name="dob" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <input type="hidden" id="userId" name="userId"> <!-- Hidden input for user ID -->
+            <button type="submit">Update User</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
